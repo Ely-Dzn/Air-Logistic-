@@ -1,0 +1,15 @@
+<List>
+
+          {['Clientes', 'Estatísticas'].map((text, index) => (
+            <ListItem key={text} disablePadding>
+              <ListItemButton>
+                <ListItemIcon>
+                {index === 0 ? <PersonIcon /> :<></>}
+                {index === 1 ? <StackedLineChartIcon /> :<></>}
+                </ListItemIcon>
+                <ListItemText primary={text} />
+              </ListItemButton>
+            </ListItem>
+          ))}
+        </List>
+        // baixo do appbar de index
